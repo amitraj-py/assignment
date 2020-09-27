@@ -14,7 +14,7 @@ def ipv4_validator(ip: str) -> bool:
 
 
 def ipv6_validator(ip: str) -> bool:
-    pat = r'([A-F0-9]{1,4}:){7}[A-F0-9]{1,4}(?![:.\w])'
+    pat = r'([A-F0-9]{1,4}:){7}[A-F0-9]{1,4}(?![:\w])'
     ipv6_rx = re.compile(pat)
     return bool(ipv6_rx.match(ip.upper()))
 
