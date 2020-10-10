@@ -26,4 +26,4 @@ test_data = [
 def test_min_time():
     for data, ans in test_data:
         obj = Butterfly(data)
-        assert obj.get_min_time() == ans
+        assert obj.all_larva_transform_time() == ans
