@@ -30,7 +30,7 @@ class Butterfly(object):
 
         return moves
 
-    def all_larva_transform_time(self):
+    def all_larva_transform_time(self) -> int:
         step = 0
         butterflies, larva = set(), set()
 
